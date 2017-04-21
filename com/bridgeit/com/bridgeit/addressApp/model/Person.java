@@ -1,8 +1,8 @@
 package com.bridgeit.addressApp.model;
 
-import java.io.Serializable;
+import java.util.Comparator;
 
-public class Person implements Serializable{
+public class Person {
 	private String firstName;
 	private String lastName;
 	private String address;

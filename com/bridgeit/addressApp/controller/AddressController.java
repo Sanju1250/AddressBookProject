@@ -1,31 +1,33 @@
 package com.bridgeit.addressApp.controller;
 
-import java.util.*;
-
 import com.bridgeit.addressApp.service.AddressBookInter;
 import com.bridgeit.addressApp.service.ImplementationAddress;
 
 public class AddressController {
 	AddressBookInter addressBookInter = new ImplementationAddress();
 
-	public void add(String addressBookName) {
-		addressBookInter.add(addressBookName);
+	public void add() {
+		addressBookInter.add();
 	}
 
-	public void delete(String addressBookName) {
-		addressBookInter.delete(addressBookName);
+	public void delete() {
+		addressBookInter.delete();
 	}
 
-	public void edit(String addressBookName) {
-		addressBookInter.edit(addressBookName);
+	public void edit() {
+		addressBookInter.edit();
 	}
 
-	public void sorti(String addressBookName) {
-		addressBookInter.sorti(addressBookName);
+	public void sorting() {
+		addressBookInter.sorting();
 	}
-    public void display(String addressBookName)
-    {
-    	addressBookInter.display(addressBookName);
-    }
+
+	public void display() {
+		addressBookInter.display();
+	}
+
+	public void searchByName() {
+		addressBookInter.searchByName();
+	}
 
 }
